@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e67edd51-44d4-45e2-9742-e0449d9e5170" name="Changes" comment="02/09/24">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/module_13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/module_13.iml" afterDir="false" />
+    <list default="true" id="e67edd51-44d4-45e2-9742-e0449d9e5170" name="Changes" comment="02/09/24 fin">
+      <change afterPath="$PROJECT_DIR$/module_13_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_phy.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot_phy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.bot_phy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_13_1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bot_phy.executor": "Run",
+    "Python.module_13_1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/1/PycharmProjects/module_13",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\PycharmProjects\module_13" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,13 +87,22 @@
       <option name="project" value="LOCAL" />
       <updated>1725260457987</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="02/09/24 fin">
+      <option name="closed" value="true" />
+      <created>1725272268703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725272268703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0" />
     <MESSAGE value="1" />
     <MESSAGE value="02/09/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="02/09/24" />
+    <MESSAGE value="02/09/24 fin" />
+    <option name="LAST_COMMIT_MESSAGE" value="02/09/24 fin" />
   </component>
 </project>
