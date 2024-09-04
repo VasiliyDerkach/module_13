@@ -9,6 +9,12 @@ class UserState(StatesGroup):
     growth = State()
     weight  = State()
 
+with open('conf_both.cnf', 'r') as cnf:
+    ctxt = cnf.read()
+    po = re.search('(?<=' + 'bot_kye=' + ').*?(?=\n)', ctxt)
+    key_bot_api = po.group(0)
+    # print(key_bot)
+
 bot = Bot(token=key_bot_api)
 disp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -17,11 +23,7 @@ async def set_age(message):
     await message.answer('Введите свой возраст:')
     await UserState.age.set()
 
-with open('conf_both.cnf', 'r') as cnf:
-    ctxt = cnf.read()
-    po = re.search('(?<=' + 'bot_kye=' + ').*?(?=\n)', ctxt)
-    key_bot_api = po.group(0)
-    # print(key_bot)
+
 @disp.message_handler(commands=['start'])
 async def start(message):
     await message.answer('Привет! Я бот помогающий твоему здоровью.')
@@ -40,7 +42,7 @@ async def set_weight(message, state):
 async def send_calories(message, state):
     await state.update_data(weight=message.text)
     data = await state.get_data()
-    colory = 10 х data['weight'] + 6,25 x data['growth'] - 5 х data['age'] + 5
+    colory = 10 * int(data['weight']) + 6.25 * int(data['growth']) - 5 * int(data['age']) + 5
     await message.answer(colory)
     await state.finish()
 @disp.message_handler()
