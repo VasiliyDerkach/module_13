@@ -33,10 +33,12 @@ ikeybrt.add(butt_1)
 ikeybrt.add(butt_2)
 @disp.message_handler(text = 'Рассчитать')
 async def main_menu(message):
-    await message.answer(text='Выберите опцию:', reply_mark=ikeybrt)
-# async def set_age(message):
-#     await message.answer('Введите свой возраст:')
-#     await UserState.age.set()
+    await message.answer(text='Выберите опцию:', reply_markup=ikeybrt)
+@disp.callback_query_handler(text='formulas')
+async def get_formulas(call):
+    await call.message.answer('Формула: 10 х вес (кг) + 6,25 x рост (см) – 5 х возраст (г) + 5')
+    await call.answer()
+
 @disp.message_handler(commands=['start'])
 async def start(message):
     await message.answer('Привет! Я бот помогающий твоему здоровью. У меня есть клавиатура', reply_markup= keybr)
@@ -45,7 +47,11 @@ async def set_growth(message, state):
     await state.update_data(age = message.text)
     await message.answer('Введите свой рост:')
     await UserState.growth.set()
-@disp.message_handler(state=UserState.growth)
+#@disp.message_handler(state=UserState.growth)
+@disp.callback_query_handler(text='calories')
+async def set_age(call):
+    await call.message.answer('Введите свой возраст:')
+    await UserState.age.set()
 async def set_weight(message, state):
     await state.update_data(growth = message.text)
     await message.answer('Введите свой вес:')
